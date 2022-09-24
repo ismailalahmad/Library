@@ -792,6 +792,16 @@
         "runtime": {
           "bin/placeholder/LibraryDomain.dll": {}
         }
+      },
+      "Logging/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Logging.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Logging.dll": {}
+        }
       }
     }
   },
@@ -2018,11 +2028,17 @@
       "type": "project",
       "path": "../LibraryDomain/LibraryDomain.csproj",
       "msbuildProject": "../LibraryDomain/LibraryDomain.csproj"
+    },
+    "Logging/1.0.0": {
+      "type": "project",
+      "path": "../Logging/Logging.csproj",
+      "msbuildProject": "../Logging/Logging.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "LibraryDomain >= 1.0.0",
+      "Logging >= 1.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.9",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.9"
     ]
@@ -2056,6 +2072,9 @@
           "projectReferences": {
             "C:\\from zero to hero\\.net\\C#\\homework C#\\LibraryManagement1\\LibraryDomain\\LibraryDomain.csproj": {
               "projectPath": "C:\\from zero to hero\\.net\\C#\\homework C#\\LibraryManagement1\\LibraryDomain\\LibraryDomain.csproj"
+            },
+            "C:\\from zero to hero\\.net\\C#\\homework C#\\LibraryManagement1\\Logging\\Logging.csproj": {
+              "projectPath": "C:\\from zero to hero\\.net\\C#\\homework C#\\LibraryManagement1\\Logging\\Logging.csproj"
             }
           }
         }

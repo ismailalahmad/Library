@@ -1,5 +1,7 @@
 ﻿using LibraryDomain;
+using Logging;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 
 namespace LibraryData
 {
@@ -9,7 +11,13 @@ namespace LibraryData
         public DbSet<Book> Books { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Data Source = (localdb)\\MSSQLLocalDB; Initial Catalog = LibraryManagement1Database");
+            ILogger logger = new Logger();
+            optionsBuilder.UseSqlServer("Data Source = (localdb)\\MSSQLLocalDB; Initial Catalog = LibraryManagement1Database")
+                .LogTo(e => logger.LogOpration(e),
+                    new[] { DbLoggerCategory.Database.Name },
+                    LogLevel.Information
+              )
+        .EnableSensitiveDataLogging();
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
