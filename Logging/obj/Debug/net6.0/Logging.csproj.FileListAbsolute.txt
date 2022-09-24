@@ -1,0 +1,12 @@
+C:\from zero to hero\.net\C#\homework C#\LibraryManagement1\Logging\bin\Debug\net6.0\Logging.deps.json
+C:\from zero to hero\.net\C#\homework C#\LibraryManagement1\Logging\bin\Debug\net6.0\Logging.dll
+C:\from zero to hero\.net\C#\homework C#\LibraryManagement1\Logging\bin\Debug\net6.0\Logging.pdb
+C:\from zero to hero\.net\C#\homework C#\LibraryManagement1\Logging\obj\Debug\net6.0\Logging.csproj.AssemblyReference.cache
+C:\from zero to hero\.net\C#\homework C#\LibraryManagement1\Logging\obj\Debug\net6.0\Logging.GeneratedMSBuildEditorConfig.editorconfig
+C:\from zero to hero\.net\C#\homework C#\LibraryManagement1\Logging\obj\Debug\net6.0\Logging.AssemblyInfoInputs.cache
+C:\from zero to hero\.net\C#\homework C#\LibraryManagement1\Logging\obj\Debug\net6.0\Logging.AssemblyInfo.cs
+C:\from zero to hero\.net\C#\homework C#\LibraryManagement1\Logging\obj\Debug\net6.0\Logging.csproj.CoreCompileInputs.cache
+C:\from zero to hero\.net\C#\homework C#\LibraryManagement1\Logging\obj\Debug\net6.0\Logging.dll
+C:\from zero to hero\.net\C#\homework C#\LibraryManagement1\Logging\obj\Debug\net6.0\refint\Logging.dll
+C:\from zero to hero\.net\C#\homework C#\LibraryManagement1\Logging\obj\Debug\net6.0\Logging.pdb
+C:\from zero to hero\.net\C#\homework C#\LibraryManagement1\Logging\obj\Debug\net6.0\ref\Logging.dll

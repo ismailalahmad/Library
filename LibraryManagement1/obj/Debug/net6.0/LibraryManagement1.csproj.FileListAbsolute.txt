@@ -1,0 +1,15 @@
+C:\from zero to hero\.net\C#\homework C#\LibraryManagement1\LibraryManagement1\bin\Debug\net6.0\LibraryManagement1.exe
+C:\from zero to hero\.net\C#\homework C#\LibraryManagement1\LibraryManagement1\bin\Debug\net6.0\LibraryManagement1.deps.json
+C:\from zero to hero\.net\C#\homework C#\LibraryManagement1\LibraryManagement1\bin\Debug\net6.0\LibraryManagement1.runtimeconfig.json
+C:\from zero to hero\.net\C#\homework C#\LibraryManagement1\LibraryManagement1\bin\Debug\net6.0\LibraryManagement1.dll
+C:\from zero to hero\.net\C#\homework C#\LibraryManagement1\LibraryManagement1\bin\Debug\net6.0\LibraryManagement1.pdb
+C:\from zero to hero\.net\C#\homework C#\LibraryManagement1\LibraryManagement1\obj\Debug\net6.0\LibraryManagement1.csproj.AssemblyReference.cache
+C:\from zero to hero\.net\C#\homework C#\LibraryManagement1\LibraryManagement1\obj\Debug\net6.0\LibraryManagement1.GeneratedMSBuildEditorConfig.editorconfig
+C:\from zero to hero\.net\C#\homework C#\LibraryManagement1\LibraryManagement1\obj\Debug\net6.0\LibraryManagement1.AssemblyInfoInputs.cache
+C:\from zero to hero\.net\C#\homework C#\LibraryManagement1\LibraryManagement1\obj\Debug\net6.0\LibraryManagement1.AssemblyInfo.cs
+C:\from zero to hero\.net\C#\homework C#\LibraryManagement1\LibraryManagement1\obj\Debug\net6.0\LibraryManagement1.csproj.CoreCompileInputs.cache
+C:\from zero to hero\.net\C#\homework C#\LibraryManagement1\LibraryManagement1\obj\Debug\net6.0\LibraryManagement1.dll
+C:\from zero to hero\.net\C#\homework C#\LibraryManagement1\LibraryManagement1\obj\Debug\net6.0\refint\LibraryManagement1.dll
+C:\from zero to hero\.net\C#\homework C#\LibraryManagement1\LibraryManagement1\obj\Debug\net6.0\LibraryManagement1.pdb
+C:\from zero to hero\.net\C#\homework C#\LibraryManagement1\LibraryManagement1\obj\Debug\net6.0\LibraryManagement1.genruntimeconfig.cache
+C:\from zero to hero\.net\C#\homework C#\LibraryManagement1\LibraryManagement1\obj\Debug\net6.0\ref\LibraryManagement1.dll
