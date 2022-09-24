@@ -2,6 +2,7 @@
 using Logging;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
+using ILogger = Logging.ILogger;
 
 namespace LibraryData
 {

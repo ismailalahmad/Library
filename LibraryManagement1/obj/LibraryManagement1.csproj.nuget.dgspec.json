@@ -4,6 +4,135 @@
     "C:\\from zero to hero\\.net\\C#\\homework C#\\LibraryManagement1\\LibraryManagement1\\LibraryManagement1.csproj": {}
   },
   "projects": {
+    "C:\\from zero to hero\\.net\\C#\\homework C#\\LibraryManagement1\\LibraryData\\LibraryData.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\from zero to hero\\.net\\C#\\homework C#\\LibraryManagement1\\LibraryData\\LibraryData.csproj",
+        "projectName": "LibraryData",
+        "projectPath": "C:\\from zero to hero\\.net\\C#\\homework C#\\LibraryManagement1\\LibraryData\\LibraryData.csproj",
+        "packagesPath": "C:\\Users\\asmay\\.nuget\\packages\\",
+        "outputPath": "C:\\from zero to hero\\.net\\C#\\homework C#\\LibraryManagement1\\LibraryData\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\asmay\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\from zero to hero\\.net\\C#\\homework C#\\LibraryManagement1\\LibraryDomain\\LibraryDomain.csproj": {
+                "projectPath": "C:\\from zero to hero\\.net\\C#\\homework C#\\LibraryManagement1\\LibraryDomain\\LibraryDomain.csproj"
+              },
+              "C:\\from zero to hero\\.net\\C#\\homework C#\\LibraryManagement1\\Logging\\Logging.csproj": {
+                "projectPath": "C:\\from zero to hero\\.net\\C#\\homework C#\\LibraryManagement1\\Logging\\Logging.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.9, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\from zero to hero\\.net\\C#\\homework C#\\LibraryManagement1\\LibraryDomain\\LibraryDomain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\from zero to hero\\.net\\C#\\homework C#\\LibraryManagement1\\LibraryDomain\\LibraryDomain.csproj",
+        "projectName": "LibraryDomain",
+        "projectPath": "C:\\from zero to hero\\.net\\C#\\homework C#\\LibraryManagement1\\LibraryDomain\\LibraryDomain.csproj",
+        "packagesPath": "C:\\Users\\asmay\\.nuget\\packages\\",
+        "outputPath": "C:\\from zero to hero\\.net\\C#\\homework C#\\LibraryManagement1\\LibraryDomain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\asmay\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\from zero to hero\\.net\\C#\\homework C#\\LibraryManagement1\\LibraryManagement1\\LibraryManagement1.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -12,6 +141,65 @@
         "projectPath": "C:\\from zero to hero\\.net\\C#\\homework C#\\LibraryManagement1\\LibraryManagement1\\LibraryManagement1.csproj",
         "packagesPath": "C:\\Users\\asmay\\.nuget\\packages\\",
         "outputPath": "C:\\from zero to hero\\.net\\C#\\homework C#\\LibraryManagement1\\LibraryManagement1\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\asmay\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\from zero to hero\\.net\\C#\\homework C#\\LibraryManagement1\\LibraryData\\LibraryData.csproj": {
+                "projectPath": "C:\\from zero to hero\\.net\\C#\\homework C#\\LibraryManagement1\\LibraryData\\LibraryData.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\from zero to hero\\.net\\C#\\homework C#\\LibraryManagement1\\Logging\\Logging.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\from zero to hero\\.net\\C#\\homework C#\\LibraryManagement1\\Logging\\Logging.csproj",
+        "projectName": "Logging",
+        "projectPath": "C:\\from zero to hero\\.net\\C#\\homework C#\\LibraryManagement1\\Logging\\Logging.csproj",
+        "packagesPath": "C:\\Users\\asmay\\.nuget\\packages\\",
+        "outputPath": "C:\\from zero to hero\\.net\\C#\\homework C#\\LibraryManagement1\\Logging\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\asmay\\AppData\\Roaming\\NuGet\\NuGet.Config",

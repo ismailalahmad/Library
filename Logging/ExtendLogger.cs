@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Logging
+﻿namespace Logging
 {
-    internal class ExtendLogger
+    public static class ExtendLogger
     {
+        public static string FullName="";
+        public static void LogOpration(this ILogger logger, string message)
+        {
+            logger.Log(FullName, message);
+        }
     }
 }

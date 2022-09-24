@@ -9,6 +9,7 @@
       "LibraryData/1.0.0": {
         "dependencies": {
           "LibraryDomain": "1.0.0",
+          "Logging": "1.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.9",
           "Microsoft.EntityFrameworkCore.Tools": "6.0.9"
         },
@@ -487,6 +488,11 @@
         "runtime": {
           "LibraryDomain.dll": {}
         }
+      },
+      "Logging/1.0.0": {
+        "runtime": {
+          "Logging.dll": {}
+        }
       }
     }
   },
@@ -798,6 +804,11 @@
       "hashPath": "system.windows.extensions.4.7.0.nupkg.sha512"
     },
     "LibraryDomain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Logging/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

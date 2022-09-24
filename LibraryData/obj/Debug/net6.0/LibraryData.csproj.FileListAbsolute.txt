@@ -15,3 +15,5 @@ C:\from zero to hero\.net\C#\homework C#\LibraryManagement1\LibraryData\obj\Debu
 C:\from zero to hero\.net\C#\homework C#\LibraryManagement1\LibraryData\obj\Debug\net6.0\LibraryData.pdb
 C:\from zero to hero\.net\C#\homework C#\LibraryManagement1\LibraryData\obj\Debug\net6.0\LibraryData.genruntimeconfig.cache
 C:\from zero to hero\.net\C#\homework C#\LibraryManagement1\LibraryData\obj\Debug\net6.0\ref\LibraryData.dll
+C:\from zero to hero\.net\C#\homework C#\LibraryManagement1\LibraryData\bin\Debug\net6.0\Logging.dll
+C:\from zero to hero\.net\C#\homework C#\LibraryManagement1\LibraryData\bin\Debug\net6.0\Logging.pdb

@@ -1,0 +1,37 @@
+[
+  {
+    "FullName": "Mohammad Masalati",
+    "Username": "123",
+    "Password": "123"
+  },
+  {
+    "FullName": "Ismail Al Ahmad",
+    "Username": "1234",
+    "Password": "1234"
+  },
+  {
+    "FullName": "Zakarea Al Ahmad",
+    "Username": "zakareaalahmad",
+    "Password": "ZakareaPassword"
+  },
+  {
+    "FullName": "Gahfer Al Ahmad",
+    "Username": "gahferalahmad",
+    "Password": "GahferPassword"
+  },
+  {
+    "FullName": "Rmzi Al Ahmad",
+    "Username": "rmzialahmad",
+    "Password": "RamziPassword"
+  },
+  {
+    "FullName": "Alaa Al ahmad",
+    "Username": "alaaalahmad",
+    "Password": "AlaaPassword"
+  },
+  {
+    "FullName": "Huseen Al Ahmad",
+    "Username": "huseenalahmad",
+    "Password": "HuseenPassword"
+  }
+]
