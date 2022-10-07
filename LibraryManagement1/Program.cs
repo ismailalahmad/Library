@@ -66,7 +66,7 @@ namespace LibraryManagement1
                     ExtendLogger.FullName = Controller.UsersController.GetUserByUsername(username).FullName;
                 }
             }
-            Console.WriteLine("Welcome {0} ,There are {1} books in the library", Controller.UsersController.GetUserByUsername(username).FullName, Controller.UsersController.Get().Count());
+            Console.WriteLine("Welcome {0} ,There are {1} books in the library", Controller.UsersController.GetUserByUsername(username).FullName, Controller.UsersController.GetUsers().Count());
             return !isExist;
         }
         private static void homePage()

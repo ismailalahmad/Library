@@ -60,4 +60,5 @@ C:\from zero to hero\.net\C#\homework C#\LibraryManagement1\LibraryManagement1\b
 C:\from zero to hero\.net\C#\homework C#\LibraryManagement1\LibraryManagement1\bin\Debug\net6.0\LibraryDomain.pdb
 C:\from zero to hero\.net\C#\homework C#\LibraryManagement1\LibraryManagement1\bin\Debug\net6.0\Logging.pdb
 C:\from zero to hero\.net\C#\homework C#\LibraryManagement1\LibraryManagement1\obj\Debug\net6.0\LibraryManagement1.csproj.CopyComplete
-C:\from zero to hero\.net\C#\homework C#\LibraryManagement1\LibraryManagement1\bin\Debug\net6.0\DefaultUsers.json
+C:\from zero to hero\.net\C#\homework C#\LibraryManagement1\LibraryManagement1\bin\Debug\net6.0\Data\DefaultUsers.json
+C:\from zero to hero\.net\C#\homework C#\LibraryManagement1\LibraryManagement1\bin\Debug\net6.0\Data\Logger.txt

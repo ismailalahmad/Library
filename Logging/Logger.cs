@@ -4,7 +4,7 @@
     {
         public void Log(string message)
         {
-            StreamWriter sw = File.AppendText("LibraryManagement1\\LibraryManagement1\\Data\\Logger.txt");
+            StreamWriter sw = File.AppendText("Logger.txt");
             sw.WriteLine(message);
             sw.Close();
         }
