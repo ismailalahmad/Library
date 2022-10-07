@@ -20,27 +20,5 @@ namespace LibraryData
               )
         .EnableSensitiveDataLogging();
         }
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            modelBuilder.Entity<Book>()
-                .HasMany(u => u.Users)
-                .WithMany(b => b.Books)
-                .UsingEntity<UserBook>(
-                j => j
-                     .HasOne(ub => ub.User)
-                     .WithMany(b => b.UserBooks)
-                     .HasForeignKey(ub => ub.UserId),
-                j => j
-                     .HasOne(ub => ub.Book)
-                     .WithMany(b => b.UserBooks)
-                     .HasForeignKey(ub => ub.BookId),
-                j =>
-                {
-                    j.Property(ub => ub.specificDate).HasDefaultValueSql("GetDate()");
-                    j.HasKey(u => new { u.UserId, u.BookId });
-                }
-                );
-
-        }
     }
 }

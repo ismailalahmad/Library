@@ -1,10 +1,10 @@
 ﻿namespace Logging
 {
-    public class Logger : ILogger
+    public sealed class Logger : ILogger
     {
         public void Log(string message)
         {
-            StreamWriter sw = File.AppendText("C:\\from zero to hero\\.net\\C#\\homework C#\\LibraryManagement1\\Logging\\Logger.txt");
+            StreamWriter sw = File.AppendText("LibraryManagement1\\LibraryManagement1\\Data\\Logger.txt");
             sw.WriteLine(message);
             sw.Close();
         }

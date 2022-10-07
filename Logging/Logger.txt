@@ -1,8 +1,8 @@
-﻿Manager : 9/24/2022 8:40:15 PM : info: 9/24/2022 20:40:15.343 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (48ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+Manager : 10/7/2022 12:42:24 PM : info: 10/7/2022 12:42:24.251 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (38ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
       SELECT 1
-Manager : 9/24/2022 8:40:15 PM : info: 9/24/2022 20:40:15.467 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (103ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+Manager : 10/7/2022 12:42:24 PM : info: 10/7/2022 12:42:24.338 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (55ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
       
       IF EXISTS
           (SELECT *
@@ -18,398 +18,126 @@ Manager : 9/24/2022 8:40:15 PM : info: 9/24/2022 20:40:15.467 RelationalEventId.
           )
       )
       SELECT 1 ELSE SELECT 0
-Manager : 9/24/2022 8:40:16 PM : info: 9/24/2022 20:40:16.002 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (21ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-      SELECT [b].[Id], [b].[IsCompleted], [b].[NumberAvailable], [b].[Price], [b].[Title]
-      FROM [Books] AS [b]
-      WHERE [b].[IsCompleted] = CAST(1 AS bit)
-Manager : 9/24/2022 8:40:16 PM : info: 9/24/2022 20:40:16.117 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-      SELECT [u].[Id], [u].[FullName], [u].[Password], [u].[Username]
-      FROM [Users] AS [u]
-Manager : 9/24/2022 8:41:01 PM : info: 9/24/2022 20:41:01.721 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (36ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-      SELECT 1
-Manager : 9/24/2022 8:41:01 PM : info: 9/24/2022 20:41:01.800 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (53ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-      
-      IF EXISTS
-          (SELECT *
-           FROM [sys].[objects] o
-           WHERE [o].[type] = 'U'
-           AND [o].[is_ms_shipped] = 0
-           AND NOT EXISTS (SELECT *
-               FROM [sys].[extended_properties] AS [ep]
-               WHERE [ep].[major_id] = [o].[object_id]
-                   AND [ep].[minor_id] = 0
-                   AND [ep].[class] = 1
-                   AND [ep].[name] = N'microsoft_database_tools_support'
-          )
-      )
-      SELECT 1 ELSE SELECT 0
-Manager : 9/24/2022 8:41:02 PM : info: 9/24/2022 20:41:02.260 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (11ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-      SELECT [b].[Id], [b].[IsCompleted], [b].[NumberAvailable], [b].[Price], [b].[Title]
-      FROM [Books] AS [b]
-      WHERE [b].[IsCompleted] = CAST(1 AS bit)
-Manager : 9/24/2022 8:41:02 PM : info: 9/24/2022 20:41:02.358 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-      SELECT [u].[Id], [u].[FullName], [u].[Password], [u].[Username]
-      FROM [Users] AS [u]
-Manager : 9/24/2022 8:41:16 PM : info: 9/24/2022 20:41:16.257 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-      SELECT [u].[Id], [u].[FullName], [u].[Password], [u].[Username]
-      FROM [Users] AS [u]
-Manager : 9/24/2022 8:41:16 PM : info: 9/24/2022 20:41:16.259 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-      SELECT [u].[Id], [u].[FullName], [u].[Password], [u].[Username]
-      FROM [Users] AS [u]
-Ismail Al Ahmad : 9/24/2022 8:41:16 PM : info: 9/24/2022 20:41:16.260 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-      SELECT [u].[Id], [u].[FullName], [u].[Password], [u].[Username]
-      FROM [Users] AS [u]
-Ismail Al Ahmad : 9/24/2022 8:41:16 PM : info: 9/24/2022 20:41:16.261 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-      SELECT [u].[Id], [u].[FullName], [u].[Password], [u].[Username]
-      FROM [Users] AS [u]
-Ismail Al Ahmad : 9/24/2022 8:41:35 PM : info: 9/24/2022 20:41:35.672 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-      SELECT [u].[Id], [u].[FullName], [u].[Password], [u].[Username]
-      FROM [Users] AS [u]
-Ismail Al Ahmad : 9/24/2022 8:42:18 PM : info: 9/24/2022 20:42:18.786 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-      SELECT [u].[Id], [u].[FullName], [u].[Password], [u].[Username]
-      FROM [Users] AS [u]
-Ismail Al Ahmad : 9/24/2022 8:42:18 PM : info: 9/24/2022 20:42:18.787 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-      SELECT [u].[Id], [u].[FullName], [u].[Password], [u].[Username]
-      FROM [Users] AS [u]
-Zakarea Al Ahmad : 9/24/2022 8:42:18 PM : info: 9/24/2022 20:42:18.789 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-      SELECT [u].[Id], [u].[FullName], [u].[Password], [u].[Username]
-      FROM [Users] AS [u]
-Zakarea Al Ahmad : 9/24/2022 8:42:18 PM : info: 9/24/2022 20:42:18.790 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-      SELECT [u].[Id], [u].[FullName], [u].[Password], [u].[Username]
-      FROM [Users] AS [u]
-Manager : 9/25/2022 10:03:50 AM : info: 9/25/2022 10:03:50.901 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (40ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-      SELECT 1
-Manager : 9/25/2022 10:03:51 AM : info: 9/25/2022 10:03:51.175 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (216ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-      
-      IF EXISTS
-          (SELECT *
-           FROM [sys].[objects] o
-           WHERE [o].[type] = 'U'
-           AND [o].[is_ms_shipped] = 0
-           AND NOT EXISTS (SELECT *
-               FROM [sys].[extended_properties] AS [ep]
-               WHERE [ep].[major_id] = [o].[object_id]
-                   AND [ep].[minor_id] = 0
-                   AND [ep].[class] = 1
-                   AND [ep].[name] = N'microsoft_database_tools_support'
-          )
-      )
-      SELECT 1 ELSE SELECT 0
-Manager : 9/25/2022 10:03:51 AM : info: 9/25/2022 10:03:51.960 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (43ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-      SELECT [b].[Id], [b].[IsCompleted], [b].[NumberAvailable], [b].[Price], [b].[Title]
-      FROM [Books] AS [b]
-      WHERE [b].[IsCompleted] = CAST(1 AS bit)
-Manager : 9/25/2022 10:03:52 AM : info: 9/25/2022 10:03:52.174 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-      SELECT [u].[Id], [u].[FullName], [u].[Password], [u].[Username]
-      FROM [Users] AS [u]
-Manager : 9/25/2022 10:04:03 AM : info: 9/25/2022 10:04:03.379 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+Manager : 10/7/2022 12:42:25 PM : info: 10/7/2022 12:42:25.088 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
       Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-      SELECT [u].[Id], [u].[FullName], [u].[Password], [u].[Username]
-      FROM [Users] AS [u]
-Manager : 9/25/2022 10:04:03 AM : info: 9/25/2022 10:04:03.381 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-      SELECT [u].[Id], [u].[FullName], [u].[Password], [u].[Username]
-      FROM [Users] AS [u]
-Ismail Al Ahmad : 9/25/2022 10:04:03 AM : info: 9/25/2022 10:04:03.383 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-      SELECT [u].[Id], [u].[FullName], [u].[Password], [u].[Username]
-      FROM [Users] AS [u]
-Ismail Al Ahmad : 9/25/2022 10:04:03 AM : info: 9/25/2022 10:04:03.385 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-      SELECT [u].[Id], [u].[FullName], [u].[Password], [u].[Username]
-      FROM [Users] AS [u]
-Ismail Al Ahmad : 9/25/2022 10:04:14 AM : info: 9/25/2022 10:04:14.908 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
       SELECT [b].[Id], [b].[IsCompleted], [b].[NumberAvailable], [b].[Price], [b].[Title]
       FROM [Books] AS [b]
       WHERE [b].[IsCompleted] = CAST(1 AS bit)
-Ismail Al Ahmad : 9/25/2022 10:04:41 AM : info: 9/25/2022 10:04:41.228 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (53ms) [Parameters=[@__Id_0='6'], CommandType='Text', CommandTimeout='30']
-      SELECT [b].[Id], [b].[IsCompleted], [b].[NumberAvailable], [b].[Price], [b].[Title]
-      FROM [Books] AS [b]
-      WHERE ([b].[Id] = @__Id_0) AND ([b].[IsCompleted] = CAST(1 AS bit))
-Ismail Al Ahmad : 9/25/2022 10:05:01 AM : info: 9/25/2022 10:05:01.475 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (3ms) [Parameters=[@__Id_0='7'], CommandType='Text', CommandTimeout='30']
-      SELECT [b].[Id], [b].[IsCompleted], [b].[NumberAvailable], [b].[Price], [b].[Title]
-      FROM [Books] AS [b]
-      WHERE ([b].[Id] = @__Id_0) AND ([b].[IsCompleted] = CAST(1 AS bit))
-Ismail Al Ahmad : 9/25/2022 10:05:01 AM : info: 9/25/2022 10:05:01.796 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (16ms) [Parameters=[@p4='7', @p0='False', @p1='5', @p2='25.2', @p3='seven book' (Nullable = false) (Size = 4000)], CommandType='Text', CommandTimeout='30']
-      SET NOCOUNT ON;
-      UPDATE [Books] SET [IsCompleted] = @p0, [NumberAvailable] = @p1, [Price] = @p2, [Title] = @p3
-      WHERE [Id] = @p4;
-      SELECT @@ROWCOUNT;
-Ismail Al Ahmad : 9/25/2022 10:05:15 AM : info: 9/25/2022 10:05:15.588 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+Manager : 10/7/2022 12:42:25 PM : info: 10/7/2022 12:42:25.227 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
       Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-      SELECT [b].[Id], [b].[IsCompleted], [b].[NumberAvailable], [b].[Price], [b].[Title]
-      FROM [Books] AS [b]
-      WHERE [b].[IsCompleted] = CAST(1 AS bit)
-Ismail Al Ahmad : 9/25/2022 10:05:49 AM : info: 9/25/2022 10:05:49.381 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (2ms) [Parameters=[@__Id_0='6'], CommandType='Text', CommandTimeout='30']
-      SELECT [b].[Id], [b].[IsCompleted], [b].[NumberAvailable], [b].[Price], [b].[Title]
-      FROM [Books] AS [b]
-      WHERE ([b].[Id] = @__Id_0) AND ([b].[IsCompleted] = CAST(1 AS bit))
-Ismail Al Ahmad : 9/25/2022 10:05:49 AM : info: 9/25/2022 10:05:49.391 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (2ms) [Parameters=[@p4='6', @p0='True', @p1='14', @p2='25.2', @p3='Book' (Nullable = false) (Size = 4000)], CommandType='Text', CommandTimeout='30']
-      SET NOCOUNT ON;
-      UPDATE [Books] SET [IsCompleted] = @p0, [NumberAvailable] = @p1, [Price] = @p2, [Title] = @p3
-      WHERE [Id] = @p4;
-      SELECT @@ROWCOUNT;
-Ismail Al Ahmad : 9/25/2022 10:05:51 AM : info: 9/25/2022 10:05:51.687 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-      SELECT [b].[Id], [b].[IsCompleted], [b].[NumberAvailable], [b].[Price], [b].[Title]
-      FROM [Books] AS [b]
-      WHERE [b].[IsCompleted] = CAST(1 AS bit)
-Ismail Al Ahmad : 9/25/2022 10:06:35 AM : info: 9/25/2022 10:06:35.104 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
       SELECT [u].[Id], [u].[FullName], [u].[Password], [u].[Username]
       FROM [Users] AS [u]
-Ismail Al Ahmad : 9/25/2022 10:06:35 AM : info: 9/25/2022 10:06:35.106 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-      SELECT [u].[Id], [u].[FullName], [u].[Password], [u].[Username]
-      FROM [Users] AS [u]
-Zakarea Al Ahmad : 9/25/2022 10:06:35 AM : info: 9/25/2022 10:06:35.108 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-      SELECT [u].[Id], [u].[FullName], [u].[Password], [u].[Username]
-      FROM [Users] AS [u]
-Zakarea Al Ahmad : 9/25/2022 10:06:35 AM : info: 9/25/2022 10:06:35.110 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-      SELECT [u].[Id], [u].[FullName], [u].[Password], [u].[Username]
-      FROM [Users] AS [u]
-Manager : 9/25/2022 11:58:36 AM : info: 9/25/2022 11:58:36.933 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (33ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+Manager : 10/7/2022 1:04:03 PM : info: 10/7/2022 13:04:03.681 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (292ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+      CREATE DATABASE [LibraryManagement1Database];
+Manager : 10/7/2022 1:04:03 PM : info: 10/7/2022 13:04:03.868 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (167ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+      IF SERVERPROPERTY('EngineEdition') <> 5
+      BEGIN
+          ALTER DATABASE [LibraryManagement1Database] SET READ_COMMITTED_SNAPSHOT ON;
+      END;
+Manager : 10/7/2022 1:04:03 PM : info: 10/7/2022 13:04:03.915 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (19ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
       SELECT 1
-Manager : 9/25/2022 11:58:37 AM : info: 9/25/2022 11:58:37.146 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (181ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-      
-      IF EXISTS
-          (SELECT *
-           FROM [sys].[objects] o
-           WHERE [o].[type] = 'U'
-           AND [o].[is_ms_shipped] = 0
-           AND NOT EXISTS (SELECT *
-               FROM [sys].[extended_properties] AS [ep]
-               WHERE [ep].[major_id] = [o].[object_id]
-                   AND [ep].[minor_id] = 0
-                   AND [ep].[class] = 1
-                   AND [ep].[name] = N'microsoft_database_tools_support'
-          )
-      )
-      SELECT 1 ELSE SELECT 0
-Manager : 9/25/2022 11:58:37 AM : info: 9/25/2022 11:58:37.996 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (14ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-      SELECT [b].[Id], [b].[IsCompleted], [b].[NumberAvailable], [b].[Price], [b].[Title]
-      FROM [Books] AS [b]
-      WHERE [b].[IsCompleted] = CAST(1 AS bit)
-Manager : 9/25/2022 11:58:38 AM : info: 9/25/2022 11:58:38.109 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+Manager : 10/7/2022 1:04:04 PM : info: 10/7/2022 13:04:04.172 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (13ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE [Books] (
+          [Id] int NOT NULL IDENTITY,
+          [Title] nvarchar(max) NOT NULL,
+          [Price] float NOT NULL,
+          [NumberAvailable] int NOT NULL,
+          [IsCompleted] bit NOT NULL,
+          CONSTRAINT [PK_Books] PRIMARY KEY ([Id])
+      );
+Manager : 10/7/2022 1:04:04 PM : info: 10/7/2022 13:04:04.176 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
       Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-      SELECT [u].[Id], [u].[FullName], [u].[Password], [u].[Username]
-      FROM [Users] AS [u]
-Manager : 9/25/2022 11:58:51 AM : info: 9/25/2022 11:58:51.608 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-      SELECT [u].[Id], [u].[FullName], [u].[Password], [u].[Username]
-      FROM [Users] AS [u]
-Manager : 9/25/2022 11:58:51 AM : info: 9/25/2022 11:58:51.610 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-      SELECT [u].[Id], [u].[FullName], [u].[Password], [u].[Username]
-      FROM [Users] AS [u]
-Ismail Al Ahmad : 9/25/2022 11:58:51 AM : info: 9/25/2022 11:58:51.612 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-      SELECT [u].[Id], [u].[FullName], [u].[Password], [u].[Username]
-      FROM [Users] AS [u]
-Ismail Al Ahmad : 9/25/2022 11:58:51 AM : info: 9/25/2022 11:58:51.614 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-      SELECT [u].[Id], [u].[FullName], [u].[Password], [u].[Username]
-      FROM [Users] AS [u]
-Ismail Al Ahmad : 9/25/2022 11:59:00 AM : info: 9/25/2022 11:59:00.197 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-      SELECT [b].[Id], [b].[IsCompleted], [b].[NumberAvailable], [b].[Price], [b].[Title]
-      FROM [Books] AS [b]
-      WHERE [b].[IsCompleted] = CAST(1 AS bit)
-Ismail Al Ahmad : 9/25/2022 11:59:24 AM : info: 9/25/2022 11:59:24.786 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (44ms) [Parameters=[@__Id_0='5'], CommandType='Text', CommandTimeout='30']
-      SELECT [b].[Id], [b].[IsCompleted], [b].[NumberAvailable], [b].[Price], [b].[Title]
-      FROM [Books] AS [b]
-      WHERE ([b].[Id] = @__Id_0) AND ([b].[IsCompleted] = CAST(1 AS bit))
-Ismail Al Ahmad : 9/25/2022 11:59:44 AM : info: 9/25/2022 11:59:44.221 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (3ms) [Parameters=[@__Id_0='6'], CommandType='Text', CommandTimeout='30']
-      SELECT [b].[Id], [b].[IsCompleted], [b].[NumberAvailable], [b].[Price], [b].[Title]
-      FROM [Books] AS [b]
-      WHERE ([b].[Id] = @__Id_0) AND ([b].[IsCompleted] = CAST(1 AS bit))
-Ismail Al Ahmad : 9/25/2022 11:59:44 AM : info: 9/25/2022 11:59:44.352 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (14ms) [Parameters=[@p4='6', @p0='False', @p1='14', @p2='25.2', @p3='Book' (Nullable = false) (Size = 4000)], CommandType='Text', CommandTimeout='30']
-      SET NOCOUNT ON;
-      UPDATE [Books] SET [IsCompleted] = @p0, [NumberAvailable] = @p1, [Price] = @p2, [Title] = @p3
-      WHERE [Id] = @p4;
-      SELECT @@ROWCOUNT;
-Ismail Al Ahmad : 9/25/2022 11:59:48 AM : info: 9/25/2022 11:59:48.824 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-      SELECT [b].[Id], [b].[IsCompleted], [b].[NumberAvailable], [b].[Price], [b].[Title]
-      FROM [Books] AS [b]
-      WHERE [b].[IsCompleted] = CAST(1 AS bit)
-Ismail Al Ahmad : 9/25/2022 12:01:38 PM : info: 9/25/2022 12:01:38.082 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (1ms) [Parameters=[@__Id_0='5'], CommandType='Text', CommandTimeout='30']
-      SELECT [b].[Id], [b].[IsCompleted], [b].[NumberAvailable], [b].[Price], [b].[Title]
-      FROM [Books] AS [b]
-      WHERE ([b].[Id] = @__Id_0) AND ([b].[IsCompleted] = CAST(1 AS bit))
-Ismail Al Ahmad : 9/25/2022 12:01:38 PM : info: 9/25/2022 12:01:38.086 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (2ms) [Parameters=[@p4='5', @p0='True', @p1='4', @p2='25', @p3='new title book' (Nullable = false) (Size = 4000)], CommandType='Text', CommandTimeout='30']
-      SET NOCOUNT ON;
-      UPDATE [Books] SET [IsCompleted] = @p0, [NumberAvailable] = @p1, [Price] = @p2, [Title] = @p3
-      WHERE [Id] = @p4;
-      SELECT @@ROWCOUNT;
-Ismail Al Ahmad : 9/25/2022 12:01:41 PM : info: 9/25/2022 12:01:41.006 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-      SELECT [b].[Id], [b].[IsCompleted], [b].[NumberAvailable], [b].[Price], [b].[Title]
-      FROM [Books] AS [b]
-      WHERE [b].[IsCompleted] = CAST(1 AS bit)
-Ismail Al Ahmad : 9/25/2022 12:02:20 PM : info: 9/25/2022 12:02:20.498 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-      SELECT [u].[Id], [u].[FullName], [u].[Password], [u].[Username]
-      FROM [Users] AS [u]
-Ismail Al Ahmad : 9/25/2022 12:02:20 PM : info: 9/25/2022 12:02:20.503 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-      SELECT [u].[Id], [u].[FullName], [u].[Password], [u].[Username]
-      FROM [Users] AS [u]
-Zakarea Al Ahmad : 9/25/2022 12:02:20 PM : info: 9/25/2022 12:02:20.505 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-      SELECT [u].[Id], [u].[FullName], [u].[Password], [u].[Username]
-      FROM [Users] AS [u]
-Zakarea Al Ahmad : 9/25/2022 12:02:20 PM : info: 9/25/2022 12:02:20.506 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-      SELECT [u].[Id], [u].[FullName], [u].[Password], [u].[Username]
-      FROM [Users] AS [u]
-Manager : 9/25/2022 12:24:10 PM : info: 9/25/2022 12:24:10.769 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (29ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-      SELECT 1
-Manager : 9/25/2022 12:24:10 PM : info: 9/25/2022 12:24:10.848 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (59ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-      
-      IF EXISTS
-          (SELECT *
-           FROM [sys].[objects] o
-           WHERE [o].[type] = 'U'
-           AND [o].[is_ms_shipped] = 0
-           AND NOT EXISTS (SELECT *
-               FROM [sys].[extended_properties] AS [ep]
-               WHERE [ep].[major_id] = [o].[object_id]
-                   AND [ep].[minor_id] = 0
-                   AND [ep].[class] = 1
-                   AND [ep].[name] = N'microsoft_database_tools_support'
-          )
-      )
-      SELECT 1 ELSE SELECT 0
-Manager : 9/25/2022 12:24:11 PM : info: 9/25/2022 12:24:11.313 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      CREATE TABLE [Users] (
+          [Id] int NOT NULL IDENTITY,
+          [FullName] nvarchar(max) NOT NULL,
+          [Username] nvarchar(max) NOT NULL,
+          [Password] nvarchar(max) NOT NULL,
+          CONSTRAINT [PK_Users] PRIMARY KEY ([Id])
+      );
+Manager : 10/7/2022 1:04:04 PM : info: 10/7/2022 13:04:04.181 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
       Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-      SELECT [b].[Id], [b].[IsCompleted], [b].[NumberAvailable], [b].[Price], [b].[Title]
-      FROM [Books] AS [b]
-      WHERE [b].[IsCompleted] = CAST(1 AS bit)
-Manager : 9/25/2022 12:24:11 PM : info: 9/25/2022 12:24:11.420 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-      SELECT [u].[Id], [u].[FullName], [u].[Password], [u].[Username]
-      FROM [Users] AS [u]
-Manager : 9/25/2022 12:24:19 PM : info: 9/25/2022 12:24:19.488 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-      SELECT [u].[Id], [u].[FullName], [u].[Password], [u].[Username]
-      FROM [Users] AS [u]
-Manager : 9/25/2022 12:24:24 PM : info: 9/25/2022 12:24:24.726 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-      SELECT [u].[Id], [u].[FullName], [u].[Password], [u].[Username]
-      FROM [Users] AS [u]
-Manager : 9/25/2022 12:24:24 PM : info: 9/25/2022 12:24:24.728 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-      SELECT [u].[Id], [u].[FullName], [u].[Password], [u].[Username]
-      FROM [Users] AS [u]
-Ismail Al Ahmad : 9/25/2022 12:24:24 PM : info: 9/25/2022 12:24:24.733 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-      SELECT [u].[Id], [u].[FullName], [u].[Password], [u].[Username]
-      FROM [Users] AS [u]
-Ismail Al Ahmad : 9/25/2022 12:24:24 PM : info: 9/25/2022 12:24:24.734 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-      SELECT [u].[Id], [u].[FullName], [u].[Password], [u].[Username]
-      FROM [Users] AS [u]
-Manager : 9/25/2022 12:25:07 PM : info: 9/25/2022 12:25:07.950 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (26ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-      SELECT 1
-Manager : 9/25/2022 12:25:08 PM : info: 9/25/2022 12:25:08.004 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (34ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-      
-      IF EXISTS
-          (SELECT *
-           FROM [sys].[objects] o
-           WHERE [o].[type] = 'U'
-           AND [o].[is_ms_shipped] = 0
-           AND NOT EXISTS (SELECT *
-               FROM [sys].[extended_properties] AS [ep]
-               WHERE [ep].[major_id] = [o].[object_id]
-                   AND [ep].[minor_id] = 0
-                   AND [ep].[class] = 1
-                   AND [ep].[name] = N'microsoft_database_tools_support'
-          )
-      )
-      SELECT 1 ELSE SELECT 0
-Manager : 9/25/2022 12:25:08 PM : info: 9/25/2022 12:25:08.433 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-      SELECT [b].[Id], [b].[IsCompleted], [b].[NumberAvailable], [b].[Price], [b].[Title]
-      FROM [Books] AS [b]
-      WHERE [b].[IsCompleted] = CAST(1 AS bit)
-Manager : 9/25/2022 12:25:08 PM : info: 9/25/2022 12:25:08.532 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      CREATE TABLE [UserBook] (
+          [BookId] int NOT NULL,
+          [UserId] int NOT NULL,
+          [specificDate] datetime2 NOT NULL DEFAULT (GetDate()),
+          CONSTRAINT [PK_UserBook] PRIMARY KEY ([UserId], [BookId]),
+          CONSTRAINT [FK_UserBook_Books_BookId] FOREIGN KEY ([BookId]) REFERENCES [Books] ([Id]) ON DELETE CASCADE,
+          CONSTRAINT [FK_UserBook_Users_UserId] FOREIGN KEY ([UserId]) REFERENCES [Users] ([Id]) ON DELETE CASCADE
+      );
+Manager : 10/7/2022 1:04:04 PM : info: 10/7/2022 13:04:04.184 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
       Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX [IX_UserBook_BookId] ON [UserBook] ([BookId]);
+Manager : 10/7/2022 1:04:05 PM : info: 10/7/2022 13:04:05.004 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (20ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [b].[Id], [b].[IsCompleted], [b].[NumberAvailable], [b].[Price], [b].[Title]
+      FROM [Books] AS [b]
+      WHERE [b].[IsCompleted] = CAST(1 AS bit)
+Manager : 10/7/2022 1:04:05 PM : info: 10/7/2022 13:04:05.446 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (73ms) [Parameters=[@p0='True', @p1='20', @p2='15.2', @p3='First Book' (Nullable = false) (Size = 4000), @p4='True', @p5='10', @p6='18', @p7='Second Book' (Nullable = false) (Size = 4000), @p8='True', @p9='1', @p10='17', @p11='Third Book' (Nullable = false) (Size = 4000), @p12='True', @p13='6', @p14='25', @p15='Fourth Book' (Nullable = false) (Size = 4000), @p16='True', @p17='10', @p18='24', @p19='Fifth Book' (Nullable = false) (Size = 4000), @p20='True', @p21='15', @p22='14.6', @p23='Sixth Book' (Nullable = false) (Size = 4000), @p24='True', @p25='30', @p26='8', @p27='Seventh Book' (Nullable = false) (Size = 4000)], CommandType='Text', CommandTimeout='30']
+      SET NOCOUNT ON;
+      DECLARE @inserted0 TABLE ([Id] int, [_Position] [int]);
+      MERGE [Books] USING (
+      VALUES (@p0, @p1, @p2, @p3, 0),
+      (@p4, @p5, @p6, @p7, 1),
+      (@p8, @p9, @p10, @p11, 2),
+      (@p12, @p13, @p14, @p15, 3),
+      (@p16, @p17, @p18, @p19, 4),
+      (@p20, @p21, @p22, @p23, 5),
+      (@p24, @p25, @p26, @p27, 6)) AS i ([IsCompleted], [NumberAvailable], [Price], [Title], _Position) ON 1=0
+      WHEN NOT MATCHED THEN
+      INSERT ([IsCompleted], [NumberAvailable], [Price], [Title])
+      VALUES (i.[IsCompleted], i.[NumberAvailable], i.[Price], i.[Title])
+      OUTPUT INSERTED.[Id], i._Position
+      INTO @inserted0;
+      
+      SELECT [i].[Id] FROM @inserted0 i
+      ORDER BY [i].[_Position];
+Manager : 10/7/2022 1:04:05 PM : info: 10/7/2022 13:04:05.532 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
       SELECT [u].[Id], [u].[FullName], [u].[Password], [u].[Username]
       FROM [Users] AS [u]
-Manager : 9/25/2022 12:25:12 PM : info: 9/25/2022 12:25:12.880 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+Manager : 10/7/2022 1:04:05 PM : info: 10/7/2022 13:04:05.907 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (15ms) [Parameters=[@p0='Mohammad Masalati' (Nullable = false) (Size = 4000), @p1='123' (Nullable = false) (Size = 4000), @p2='123' (Nullable = false) (Size = 4000), @p3='Ismail Al Ahmad' (Nullable = false) (Size = 4000), @p4='1234' (Nullable = false) (Size = 4000), @p5='1234' (Nullable = false) (Size = 4000), @p6='Zakarea Al Ahmad' (Nullable = false) (Size = 4000), @p7='ZakareaPassword' (Nullable = false) (Size = 4000), @p8='zakareaalahmad' (Nullable = false) (Size = 4000), @p9='Gahfer Al Ahmad' (Nullable = false) (Size = 4000), @p10='GahferPassword' (Nullable = false) (Size = 4000), @p11='gahferalahmad' (Nullable = false) (Size = 4000), @p12='Rmzi Al Ahmad' (Nullable = false) (Size = 4000), @p13='RamziPassword' (Nullable = false) (Size = 4000), @p14='rmzialahmad' (Nullable = false) (Size = 4000), @p15='Alaa Al ahmad' (Nullable = false) (Size = 4000), @p16='AlaaPassword' (Nullable = false) (Size = 4000), @p17='alaaalahmad' (Nullable = false) (Size = 4000), @p18='Huseen Al Ahmad' (Nullable = false) (Size = 4000), @p19='HuseenPassword' (Nullable = false) (Size = 4000), @p20='huseenalahmad' (Nullable = false) (Size = 4000)], CommandType='Text', CommandTimeout='30']
+      SET NOCOUNT ON;
+      DECLARE @inserted0 TABLE ([Id] int, [_Position] [int]);
+      MERGE [Users] USING (
+      VALUES (@p0, @p1, @p2, 0),
+      (@p3, @p4, @p5, 1),
+      (@p6, @p7, @p8, 2),
+      (@p9, @p10, @p11, 3),
+      (@p12, @p13, @p14, 4),
+      (@p15, @p16, @p17, 5),
+      (@p18, @p19, @p20, 6)) AS i ([FullName], [Password], [Username], _Position) ON 1=0
+      WHEN NOT MATCHED THEN
+      INSERT ([FullName], [Password], [Username])
+      VALUES (i.[FullName], i.[Password], i.[Username])
+      OUTPUT INSERTED.[Id], i._Position
+      INTO @inserted0;
+      
+      SELECT [i].[Id] FROM @inserted0 i
+      ORDER BY [i].[_Position];
+Manager : 10/7/2022 1:04:13 PM : info: 10/7/2022 13:04:13.476 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
       SELECT [u].[Id], [u].[FullName], [u].[Password], [u].[Username]
       FROM [Users] AS [u]
-Manager : 9/25/2022 12:25:12 PM : info: 9/25/2022 12:25:12.882 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-      SELECT [u].[Id], [u].[FullName], [u].[Password], [u].[Username]
-      FROM [Users] AS [u]
-Ismail Al Ahmad : 9/25/2022 12:25:12 PM : info: 9/25/2022 12:25:12.884 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-      SELECT [u].[Id], [u].[FullName], [u].[Password], [u].[Username]
-      FROM [Users] AS [u]
-Ismail Al Ahmad : 9/25/2022 12:25:12 PM : info: 9/25/2022 12:25:12.886 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+Manager : 10/7/2022 1:04:13 PM : info: 10/7/2022 13:04:13.484 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
       Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
       SELECT [u].[Id], [u].[FullName], [u].[Password], [u].[Username]
       FROM [Users] AS [u]
-Ismail Al Ahmad : 9/25/2022 12:25:22 PM : info: 9/25/2022 12:25:22.190 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (43ms) [Parameters=[@__Id_0='5'], CommandType='Text', CommandTimeout='30']
+Ismail Al Ahmad : 10/7/2022 1:04:13 PM : info: 10/7/2022 13:04:13.485 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [u].[Id], [u].[FullName], [u].[Password], [u].[Username]
+      FROM [Users] AS [u]
+Ismail Al Ahmad : 10/7/2022 1:04:13 PM : info: 10/7/2022 13:04:13.486 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [u].[Id], [u].[FullName], [u].[Password], [u].[Username]
+      FROM [Users] AS [u]
+Ismail Al Ahmad : 10/7/2022 1:04:16 PM : info: 10/7/2022 13:04:16.565 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
       SELECT [b].[Id], [b].[IsCompleted], [b].[NumberAvailable], [b].[Price], [b].[Title]
       FROM [Books] AS [b]
-      WHERE ([b].[Id] = @__Id_0) AND ([b].[IsCompleted] = CAST(1 AS bit))
-Ismail Al Ahmad : 9/25/2022 12:26:08 PM : info: 9/25/2022 12:26:08.692 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (1ms) [Parameters=[@__Id_0='5'], CommandType='Text', CommandTimeout='30']
-      SELECT [b].[Id], [b].[IsCompleted], [b].[NumberAvailable], [b].[Price], [b].[Title]
-      FROM [Books] AS [b]
-      WHERE ([b].[Id] = @__Id_0) AND ([b].[IsCompleted] = CAST(1 AS bit))
-Ismail Al Ahmad : 9/25/2022 12:26:08 PM : info: 9/25/2022 12:26:08.815 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (16ms) [Parameters=[@p4='5', @p0='True', @p1='10', @p2='10', @p3='my title' (Nullable = false) (Size = 4000)], CommandType='Text', CommandTimeout='30']
-      SET NOCOUNT ON;
-      UPDATE [Books] SET [IsCompleted] = @p0, [NumberAvailable] = @p1, [Price] = @p2, [Title] = @p3
-      WHERE [Id] = @p4;
-      SELECT @@ROWCOUNT;
-Ismail Al Ahmad : 9/25/2022 12:26:24 PM : info: 9/25/2022 12:26:24.880 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (7ms) [Parameters=[@__Id_0='5'], CommandType='Text', CommandTimeout='30']
-      SELECT [b].[Id], [b].[IsCompleted], [b].[NumberAvailable], [b].[Price], [b].[Title]
-      FROM [Books] AS [b]
-      WHERE ([b].[Id] = @__Id_0) AND ([b].[IsCompleted] = CAST(1 AS bit))
+      WHERE [b].[IsCompleted] = CAST(1 AS bit)

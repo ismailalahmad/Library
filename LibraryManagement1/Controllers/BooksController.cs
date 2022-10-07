@@ -5,7 +5,7 @@ namespace LibraryManagement1.Controller
 {
     public class BooksController
     {
-        public static void Add(List<Book> list)
+        public static void AddBooks(List<Book> list)
         {
             using (var context = new LibraryDBContext())
             {
@@ -14,48 +14,38 @@ namespace LibraryManagement1.Controller
             }
         }
 
-        public static List<Book> Get()
+        public static List<Book> GetBooks()
         {
             using (var context = new LibraryDBContext())
             {
-                var books = context.Books.Where(b => b.IsCompleted == true).ToList();
+                var books = context.Books.Where(b => b.IsDeleted == true).ToList();
                 return books;
             }
         }
 
-        public static Book Get(int Id)
+        public static Book GetBook(int Id)
         {
             using (var context = new LibraryDBContext())
             {
-                var book = context.Books.Where(b => (b.Id == Id && b.IsCompleted == true)).ToList();
-                return book[0];
+                var book = context.Books.FirstOrDefault(b => (b.Id == Id && b.IsDeleted == true));
+                return book;
             }
         }
-
-        public static void Remove()
-        {
-            var books = Get();
-            foreach (var book in books)
-            {
-                Remove(book.Id);
-            }
-        }
-
-        public static void Remove(int Id)
+        public static void RemoveBook(int Id)
         {
             using (var context = new LibraryDBContext())
             {
-                var Book = Get(Id);
-                Book.IsCompleted = false;
-                context.Books.Update(Book);
+                var book = context.Books.FirstOrDefault(b => (b.Id == Id && b.IsDeleted == true));
+                book.IsDeleted = false;
+                context.Books.Update(book);
                 context.SaveChanges();
             }
         }
-        public static void Update(int id, string? title, double price, int numberAvailable)
+        public static void UpdateBook(int Id, string? title, double price, int numberAvailable)
         {
             using (var context = new LibraryDBContext())
             {
-                var book = Get(id);
+                var book = context.Books.FirstOrDefault(b => (b.Id == Id && b.IsDeleted == true));
                 book.Title = title;
                 book.Price = price;
                 book.NumberAvailable = numberAvailable;

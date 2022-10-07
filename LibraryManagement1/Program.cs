@@ -9,40 +9,43 @@ namespace LibraryManagement1
     {
         static void Main(string[] args)
         {
-            check();
+            checkForApp();
             Console.WriteLine("Welcome! to the Library");
             homePage();
         }
-        private static void check()
+        private static void checkForApp()
         {
             //Check the existence of the database
+            DatabaseCreated();
+            //Check for books
+            BooksAdded();
+            //Check for users
+            UsersAdded();
+
+        }
+        private static void DatabaseCreated()
+        {
             using (var context = new LibraryDBContext())
             {
                 context.Database.EnsureCreated();
             }
-            //Check for books
-            if (Controller.BooksController.Get().Count() == 0)
+        }
+        private static void BooksAdded()
+        {
+            if (Controller.BooksController.GetBooks().Count() == 0)
             {
-                var books = new List<Book>()
-                        {
-                            new Book(){Title = "First Book", Price = 15.2, NumberAvailable = 20,},
-                            new Book(){Title = "Second Book", Price = 18, NumberAvailable = 10},
-                            new Book(){Title = "Third Book", Price = 17, NumberAvailable = 1},
-                            new Book(){Title = "Fourth Book", Price = 25, NumberAvailable = 6},
-                            new Book(){Title = "Fifth Book", Price = 24, NumberAvailable = 10},
-                            new Book(){Title = "Sixth Book", Price = 14.6, NumberAvailable = 15},
-                            new Book(){Title = "Seventh Book", Price = 8, NumberAvailable = 30},
-                        };
-                Controller.BooksController.Add(books);
+                var books = Data.BookDataStor.Current.Books;
+                Controller.BooksController.AddBooks(books);
             }
-            //Check for users
-            if (Controller.UsersController.Get().Count() == 0)
+        }
+        private static void UsersAdded()
+        {
+            if (Controller.UsersController.GetUsers().Count() == 0)
             {
-                String contents = File.ReadAllText("DefaultUsers.json");
+                String contents = File.ReadAllText("Data/DefaultUsers.json");
                 var defaultEmployees = JsonSerializer.Deserialize<List<User>>(contents);
-                Controller.UsersController.Add(defaultEmployees);
+                Controller.UsersController.AddUsers(defaultEmployees);
             }
-
         }
         private static bool LogIn()
         {
@@ -55,23 +58,23 @@ namespace LibraryManagement1
                 username = Console.ReadLine();
                 Console.WriteLine("Please, Enter password");
                 password = Console.ReadLine();
-                isExist = !Controller.UsersController.find(username, password);
+                isExist = !Controller.UsersController.UserExist(username, password);
                 if (isExist)
                     Console.WriteLine("You have an error, please try again");
                 else
                 {
-                    ExtendLogger.FullName = Controller.UsersController.Get(username).FullName;
+                    ExtendLogger.FullName = Controller.UsersController.GetUserByUsername(username).FullName;
                 }
             }
-            Console.WriteLine("Welcome {0} ,There are {1} books in the library", Controller.UsersController.Get(username).FullName, Controller.UsersController.Get().Count());
+            Console.WriteLine("Welcome {0} ,There are {1} books in the library", Controller.UsersController.GetUserByUsername(username).FullName, Controller.UsersController.Get().Count());
             return !isExist;
         }
         private static void homePage()
         {
             if (LogIn())
             {
-                string Exit = "";
-                while (Exit != "6")
+                bool Exit = false;
+                while (!Exit)
                 {
                     int option = 0;
                     Console.WriteLine("choose :");
@@ -90,7 +93,7 @@ namespace LibraryManagement1
                         case 3: delete(); break;
                         case 4: update(); break;
                         case 5: homePage(); break;
-                        case 6: Exit = "6"; Console.WriteLine("Done..."); break;
+                        case 6: Exit = true; Console.WriteLine("Done..."); break;
                         default: Console.WriteLine("this option is not available"); break;
                     }
                 }
@@ -98,7 +101,7 @@ namespace LibraryManagement1
         }
         private static void briefInformation()
         {
-            var books = Controller.BooksController.Get();
+            var books = Controller.BooksController.GetBooks();
             int countOfAllCopies = 0;
             foreach (var book in books)
             {
@@ -114,7 +117,7 @@ namespace LibraryManagement1
         {
             Console.WriteLine("Enter the book Id");
             int id = Convert.ToInt32(Console.ReadLine());
-            var book = Controller.BooksController.Get(id);
+            var book = Controller.BooksController.GetBook(id);
             Console.WriteLine("_______________________________________");
             Console.WriteLine("Title : " + book.Title);
             Console.WriteLine("Price : " + book.Price);
@@ -125,7 +128,7 @@ namespace LibraryManagement1
         private static void delete()
         {
             Console.WriteLine("Enter book ID");
-            Controller.BooksController.Remove(Convert.ToInt32(Console.ReadLine()));
+            Controller.BooksController.RemoveBook(Convert.ToInt32(Console.ReadLine()));
             Console.WriteLine("Book is deleted");
             Console.WriteLine("_______________________________________");
         }
@@ -142,7 +145,7 @@ namespace LibraryManagement1
             price = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("Please, Enter the new number available");
             numberAvailable = Convert.ToInt32(Console.ReadLine());
-            Controller.BooksController.Update(id, title, price, numberAvailable);
+            Controller.BooksController.UpdateBook(id, title, price, numberAvailable);
             Console.WriteLine("Book is updated");
             Console.WriteLine("_______________________________________");
         }
